@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Hind Siliguri", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(148 163 184);
+  border-radius: 30px;
+}
+
+@layer components {
+  .container {
+    width: 96%;
+    margin: 0 auto;
+    padding: 20px 20px;
+  }
+}

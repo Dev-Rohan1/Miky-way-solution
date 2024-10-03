@@ -1,0 +1,1562 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News Portal</title>
+    <!-- ====== Font awesome ===== -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ====== Tailwind css ===== -->
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body>
+    <!-- ======== Header section start========== -->
+    <header>
+      <div class="flex items-center justify-between container">
+        <div class="md:w-[35%]">
+          <div class="flex items-center md:gap-3 md:mb-4">
+            <i class="fa-solid fa-bars text-2xl cursor-pointer"></i
+            ><i
+              class="fa-solid fa-magnifying-glass hidden md:block text-2xl cursor-pointerF"
+            ></i>
+          </div>
+          <p class="hidden md:flex items-center gap-1">
+            <i class="fa-solid fa-calendar-days"></i
+            ><span class="text-sm font-medium"
+              >বৃহস্পতিবার, ০৩ অক্টোবর ২০২৪, ১৭ আশ্বিন ১৪৩১</span
+            >
+          </p>
+        </div>
+        <div class="md:w-[30%]">
+          <a href="./index.html">
+            <img
+              class="h-8 md:h-11 lg:h-14 m-auto"
+              src="./assets/logo.svg"
+              alt="logo"
+          /></a>
+        </div>
+        <div class="md:w-[30%] md:block">
+          <div
+            class="hidden md:flex justify-end gap-4 text-2xl text-black opacity-90"
+          >
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <i
+            class="fa-solid fa-magnifying-glass text-2xl opacity-80 md:hidden"
+          ></i>
+          <ul class="hidden md:flex items-center gap-2 justify-end md:mt-3">
+            <li><a class="text-sm" href="#">বাংলা কনভার্টার</a></li>
+            <span
+              class="w-[1.5px] h-[15px] inline-block bg-black rounded-full"
+            ></span>
+            <li><a class="text-sm" href="#">ই-পেপার</a></li>
+            <span
+              class="w-[1px] h-[15px] inline-block bg-black rounded-full"
+            ></span>
+            <li><a class="text-sm" href="#">আর্কাইভ</a></li>
+            <span
+              class="w-[1px] h-[15px] inline-block bg-black rounded-full"
+            ></span>
+            <li>
+              <a class="font-semibold text-base" href="#">English</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- ========= Navbar ========= -->
+      <nav class="mt-3 bg-blue-500 hidden lg:block">
+        <ul
+          class="flex items-center gap-4 justify-between text-white container"
+        >
+          <li>
+            <a
+              href="#"
+              class="text-lg font-medium hover:text-black transition-colors"
+              >সর্বশেষ
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-lg font-medium hover:text-black transition-colors"
+            >
+              বিশেষ সংবাদ</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-lg font-medium hover:text-black transition-colors"
+              >জাতীয়</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-lg font-medium hover:text-black transition-colors"
+              >সারাদেশ</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-lg font-medium hover:text-black transition-colors"
+              >রাজনীতি</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-lg font-medium hover:text-black transition-colors"
+              >বিশ্ব সংবাদ</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-lg font-medium hover:text-black transition-colors"
+              >খেলা</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-lg font-medium hover:text-black transition-colors"
+              >বিনোদন</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-lg font-medium hover:text-black transition-colors"
+              >বাণিজ্য</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-lg font-medium">লাইফস্টাইল</a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-lg font-medium hover:text-black transition-colors"
+              >টেক</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-lg font-medium hover:text-black transition-colors"
+              >আইন-আদালত</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-lg font-medium hover:text-black transition-colors"
+              >মতামত</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- ========Header section end========== -->
+    <!-- ========adds section start========== -->
+    <div class="flex items-center justify-center mt-3">
+      <div class="m-auto block">
+        <a href="#" class="text-center">
+          <img class="text-center" src="./assets/adds.jpeg" alt="adds_png" />
+        </a>
+      </div>
+    </div>
+    <!-- ========adds section end========== -->
+    <!-- ========Main section start========== -->
+    <section>
+      <div class="container">
+        <div
+          class="grid gird-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-4 border-b-[1px] border-gray-800 pb-4"
+        >
+          <div class="md:border-r-[1px] border-gray-800 pr-4">
+            <a class="" href="#">
+              <img
+                class="rounded-sm mb-5 w-[100%]"
+                src="./assets/image5.webp"
+                alt="image5_webp"
+              />
+              <h1 class="text-lg font-semibold mb-3 md:text-2xl">
+                সাবেক প্রতিমন্ত্রী নুরুল ইসলাম চৌধুরীর মৃত্যুবার্ষিকী আজ
+              </h1>
+              <p class="text-gray-600 text-sm mb-4 block md:text-base">
+                চট্টগ্রামের সন্তান অধ্যাপক নুরুল ইসলাম চৌধুরীর ২৯তম
+                মৃত্যুবার্ষিকী আজ বৃহস্পতিবার।
+                <span class="block mt-4 text-sm text-gray-600"
+                  >২৬ মিনিট আগে</span
+                >
+              </p>
+            </a>
+          </div>
+          <div class="lg:border-r-[1px] border-gray-800 pr-4">
+            <a
+              href="#"
+              class="w-full mb-5 block border-b-[1px] border-stone-500"
+            >
+              <div class="flex items-center justify-between gap-1">
+                <h3 class="max-w-[60%] text-lg font-medium md:font-semibold">
+                  সাইফুদ্দিন, আল আমিন, কালু ও শরীফ—এখন থেকে এক চোখেই পৃথিবী
+                  দেখবেন এই তরুণেরা
+                </h3>
+                <img
+                  class="max-w-[40%]"
+                  src="./assets/image6.webp"
+                  alt="image-6"
+                />
+              </div>
+              <p class="mt-3 text-sm text-gray-600 md:text-base">
+                কোটা সংস্কার আন্দোলন একসময় ছাত্র-জনতার অভ্যুত্থানে পরিণত হয়। পতন
+                ঘটে আওয়ামী লীগ সরকারের।
+              </p>
+              <span class="text-sm text-gray-600 mt-4 block md:text-base">
+                ২৭ মিনিট আগে</span
+              >
+            </a>
+            <a
+              href="#"
+              class="w-full mb-5 block border-b-[1px] border-stone-500"
+            >
+              <div class="flex items-center justify-between gap-1">
+                <h3 class="max-w-[60%] text-lg font-medium md:font-semibold">
+                  সাইফুদ্দিন, আল আমিন, কালু ও শরীফ—এখন থেকে এক চোখেই পৃথিবী
+                  দেখবেন এই তরুণেরা
+                </h3>
+                <img
+                  class="max-w-[40%]"
+                  src="./assets/image6.webp"
+                  alt="image-6"
+                />
+              </div>
+              <p class="mt-3 text-sm text-gray-600 md:text-base">
+                কোটা সংস্কার আন্দোলন একসময় ছাত্র-জনতার অভ্যুত্থানে পরিণত হয়। পতন
+                ঘটে আওয়ামী লীগ সরকারের।
+              </p>
+              <span class="text-sm text-gray-600 mt-4 block md:text-base">
+                ২৭ মিনিট আগে</span
+              >
+            </a>
+            <a href="#" class="w-full mb-5 block">
+              <div class="flex items-center justify-between gap-1">
+                <h3 class="max-w-[60%] text-lg font-medium md:font-semibold">
+                  সাইফুদ্দিন, আল আমিন, কালু ও শরীফ—এখন থেকে এক চোখেই পৃথিবী
+                  দেখবেন এই তরুণেরা
+                </h3>
+                <img
+                  class="max-w-[40%]"
+                  src="./assets/image6.webp"
+                  alt="image-6"
+                />
+              </div>
+              <p class="mt-3 text-sm text-gray-600 md:text-base">
+                কোটা সংস্কার আন্দোলন একসময় ছাত্র-জনতার অভ্যুত্থানে পরিণত হয়। পতন
+                ঘটে আওয়ামী লীগ সরকারের।
+              </p>
+              <span class="text-sm text-gray-600 mt-4 block md:text-base">
+                ২৭ মিনিট আগে</span
+              >
+            </a>
+          </div>
+          <div class="w-[100%]">
+            <a
+              href="#"
+              class="flex justify-between w-full mb-5 border-b-[1px] border-stone-500 pb-3"
+            >
+              <div class="max-[60%]">
+                <h3 class="text-lg font-medium md:font-semibold">
+                  ছেলের পর সাবেক সংসদ সদস্য দবিরুল ইসলাম গ্রেপ্তার
+                </h3>
+                <span class="block mt-3"> ১ ঘণ্টা আগে</span>
+              </div>
+              <img
+                class="max-w-[40%]"
+                src="./assets/image7.webp"
+                alt="image-7"
+              />
+            </a>
+            <a
+              href="#"
+              class="flex justify-between w-full mb-5 border-b-[1px] border-stone-500 pb-3"
+            >
+              <div class="max-[60%]">
+                <h3 class="text-lg font-medium md:font-semibold">
+                  ছেলের পর সাবেক সংসদ সদস্য দবিরুল ইসলাম গ্রেপ্তার
+                </h3>
+                <span class="block mt-3"> ১ ঘণ্টা আগে</span>
+              </div>
+              <img
+                class="max-w-[40%]"
+                src="./assets/image7.webp"
+                alt="image-7"
+              />
+            </a>
+            <a href="#" class="w-[100%]">
+              <img class="w-full" src="./assets/adds2.gif" alt="adds-2" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div
+        class="container grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5"
+      >
+        <a href="#">
+          <img
+            src="./assets/image1.webp"
+            class="rounded-md"
+            alt="image1.webp"
+          />
+          <h3 class="text-lg font-semibold mt-3 leading-snug">
+            লেবাননে ইসরায়েলি হামলার প্রতিবাদে খেলাফত আন্দোলনের...
+          </h3>
+        </a>
+        <a href="#">
+          <img
+            src="./assets/image2webp.webp"
+            class="rounded-md"
+            alt="image1.webp"
+          />
+          <h3 class="text-lg font-semibold mt-3 leading-snug">
+            রাজনৈতিক দলগুলোর সঙ্গে প্রধান উপদেষ্টার আলোচনা...
+          </h3>
+        </a>
+        <a href="#">
+          <img
+            src="./assets/image3.webp"
+            class="rounded-md"
+            alt="image1.webp"
+          />
+          <h3 class="text-lg font-semibold mt-3 leading-snug">
+            মার্কেট দখল করতে গিয়ে আটক নেতাকে বহিষ্কার করল...
+          </h3>
+        </a>
+        <a href="#">
+          <img
+            src="./assets/image4.webp"
+            class="rounded-md"
+            alt="image1.webp"
+          />
+          <h3 class="text-lg font-semibold mt-3 leading-snug">
+            দুদকের মামলায় ডা. জুবাইদার সাজা স্থগিত করে...
+          </h3>
+        </a>
+      </div>
+    </section>
+    <section class="mt-10">
+      <div class="container">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-5">
+          <a href="#" class="block w-full">
+            <span
+              class="block bg-gray-100 mb-2 px-2 py-2 border-b-[1px] border-t-[3px] rounded-md border-green-600 text-lg font-semibold"
+              >জাতীয়</span
+            >
+            <div class="relative rounded-md overflow-hidden mb-4">
+              <img
+                class="w-full rounded-md"
+                src="./assets/image-10.jpg"
+                alt="image-10"
+              />
+              <h3
+                class="absolute rounded-sm px-3 leading-tight py-1 left-0 bottom-0 text-lg text-white bg-slate-800 opacity-95 hover:underline transition-all"
+              >
+                হাসিনাসহ ৩০ জনের বিরুদ্ধে ট্রাইব্যুনালে নাগরিক কমিটির অভিযোগ
+              </h3>
+            </div>
+            <div>
+              <div
+                class="flex justify-between items-center gap-2 border-b-[1px] border-dashed border-gray-700 pb-2 mb-2"
+              >
+                <img
+                  class="max-w-[40%] rounded-md"
+                  src="./assets/image-11.jpg"
+                  alt="image-11"
+                />
+                <h3
+                  class="max-w-[60%] text-xl font-medium leading-relaxed hover:text-red-500 hover:underline transition-colors"
+                >
+                  স্ত্রীসহ সাবেক এমপি দুর্জয়ের দেশত্যাগে নিষেধাজ্ঞা
+                </h3>
+              </div>
+              <div
+                class="flex justify-between items-center gap-2 border-b-[1px] border-dashed border-gray-700 pb-2"
+              >
+                <img
+                  class="max-w-[40%] rounded-md"
+                  src="./assets/image-11.jpg"
+                  alt="image-11"
+                />
+                <h3
+                  class="max-w-[60%] text-xl font-medium leading-relaxed hover:text-red-500 hover:underline transition-colors"
+                >
+                  স্ত্রীসহ সাবেক এমপি দুর্জয়ের দেশত্যাগে নিষেধাজ্ঞা
+                </h3>
+              </div>
+              <div class="flex justify-between items-center gap-2 mb-2 mt-2">
+                <img
+                  class="max-w-[40%] rounded-md"
+                  src="./assets/image-11.jpg"
+                  alt="image-11"
+                />
+                <h3
+                  class="max-w-[60%] text-xl font-medium leading-relaxed hover:text-red-500 hover:underline transition-colors"
+                >
+                  স্ত্রীসহ সাবেক এমপি দুর্জয়ের দেশত্যাগে নিষেধাজ্ঞা
+                </h3>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="block w-full">
+            <span
+              class="block bg-gray-100 border-b-[1px] mb-2 px-2 py-2 border-t-[3px] rounded-md border-blue-800 text-lg font-semibold"
+              >আন্তর্জাতিক</span
+            >
+            <div class="relative rounded-md overflow-hidden mb-4">
+              <img
+                class="w-full rounded-md"
+                src="./assets/image-12.jpg"
+                alt="image-10"
+              />
+              <h3
+                class="absolute w-full rounded-sm px-3 leading-tight py-1 left-0 bottom-0 text-lg text-white bg-slate-800 opacity-95 hover:underline transition-all"
+              >
+                নাইজেরিয়ায় নৌকা ডুবে ১৬ জনের প্রাণহানি
+              </h3>
+            </div>
+            <div>
+              <div
+                class="flex justify-between items-center gap-2 border-b-[1px] border-dashed border-gray-700 pb-2 mb-2"
+              >
+                <img
+                  class="max-w-[40%] rounded-md"
+                  src="./assets/image-13.jpg"
+                  alt="image-11"
+                />
+                <h3
+                  class="max-w-[60%] text-xl font-medium leading-relaxed hover:text-red-500 hover:underline transition-colors"
+                >
+                  লেবাননে ইসরায়েলের ভয়াবহ হামলা, নিহত আরও ৪৬
+                </h3>
+              </div>
+              <div
+                class="flex justify-between items-center gap-2 border-b-[1px] border-dashed border-gray-700 pb-2"
+              >
+                <img
+                  class="max-w-[40%] rounded-md"
+                  src="./assets/image-11.jpg"
+                  alt="image-11"
+                />
+                <h3
+                  class="max-w-[60%] text-xl font-medium leading-relaxed hover:text-red-500 hover:underline transition-colors"
+                >
+                  স্ত্রীসহ সাবেক এমপি দুর্জয়ের দেশত্যাগে নিষেধাজ্ঞা
+                </h3>
+              </div>
+              <div class="flex justify-between items-center gap-2 mb-2 mt-2">
+                <img
+                  class="max-w-[40%] rounded-md"
+                  src="./assets/image-11.jpg"
+                  alt="image-11"
+                />
+                <h3
+                  class="max-w-[60%] text-xl font-medium leading-relaxed hover:text-red-500 hover:underline transition-colors"
+                >
+                  স্ত্রীসহ সাবেক এমপি দুর্জয়ের দেশত্যাগে নিষেধাজ্ঞা
+                </h3>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="block w-full">
+            <span
+              class="block bg-gray-100 mb-2 px-2 py-2 border-t-[3px] border-b-[1px] rounded-md border-red-500 text-lg font-semibold"
+              >অর্থ ও বাণিজ্য</span
+            >
+            <div class="relative rounded-md overflow-hidden mb-4">
+              <img
+                class="w-full rounded-md"
+                src="./assets/image-12.jpg"
+                alt="image-10"
+              />
+              <h3
+                class="absolute w-full rounded-sm px-3 leading-tight py-1 left-0 bottom-0 text-lg text-white bg-slate-800 opacity-95 hover:underline transition-all"
+              >
+                নাইজেরিয়ায় নৌকা ডুবে ১৬ জনের প্রাণহানি
+              </h3>
+            </div>
+            <div>
+              <div
+                class="flex justify-between items-center gap-2 border-b-[1px] border-dashed border-gray-700 pb-2 mb-2"
+              >
+                <img
+                  class="max-w-[40%] rounded-md"
+                  src="./assets/image-13.jpg"
+                  alt="image-11"
+                />
+                <h3
+                  class="max-w-[60%] text-xl font-medium leading-relaxed hover:text-red-500 hover:underline transition-colors"
+                >
+                  লেবাননে ইসরায়েলের ভয়াবহ হামলা, নিহত আরও ৪৬
+                </h3>
+              </div>
+              <div
+                class="flex justify-between items-center gap-2 border-b-[1px] border-dashed border-gray-700 pb-2"
+              >
+                <img
+                  class="max-w-[40%] rounded-md"
+                  src="./assets/image-11.jpg"
+                  alt="image-11"
+                />
+                <h3
+                  class="max-w-[60%] text-xl font-medium leading-relaxed hover:text-red-500 hover:underline transition-colors"
+                >
+                  স্ত্রীসহ সাবেক এমপি দুর্জয়ের দেশত্যাগে নিষেধাজ্ঞা
+                </h3>
+              </div>
+              <div class="flex justify-between items-center gap-2 mb-2 mt-2">
+                <img
+                  class="max-w-[40%] rounded-md"
+                  src="./assets/image-11.jpg"
+                  alt="image-11"
+                />
+                <h3
+                  class="max-w-[60%] text-xl font-medium leading-relaxed hover:text-red-500 hover:underline transition-colors"
+                >
+                  স্ত্রীসহ সাবেক এমপি দুর্জয়ের দেশত্যাগে নিষেধাজ্ঞা
+                </h3>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="mt-10">
+      <div class="container">
+        <span
+          class="block bg-gray-100 mb-2 px-2 py-2 border-b-[1px] border-t-[3px] rounded-md border-indigo-500 text-lg font-semibold"
+          >খেলাধুলা</span
+        >
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-5">
+          <a href="#" class="w-full block">
+            <div>
+              <div
+                class="bg-slate-300 drop-shadow-xl mb-3 rounded-md overflow-hidden"
+              >
+                <img
+                  class="w-full rounded-sm"
+                  src="./assets/image-14..jpg"
+                  alt="image-14"
+                />
+                <h1 class="text-xl font-semibold px-4 py-2">
+                  নারী টি-টোয়েন্টি বিশ্বকাপের পর্দা উঠছে কাল
+                </h1>
+              </div>
+              <div class="flex gap-3">
+                <div class="bg-slate-300 rounded-sm overflow-hidden">
+                  <img
+                    class="rounded-sm"
+                    src="./assets/image15.jpg"
+                    alt="image-15"
+                  />
+                  <h3 class="px-3 py-2">বার্সেলোনার দাপুটে জয়</h3>
+                </div>
+                <div class="bg-slate-300 rounded-sm overflow-hidden">
+                  <img
+                    class="rounded-sm"
+                    src="./assets/image15.jpg"
+                    alt="image-15"
+                  />
+                  <h3 class="px-3 py-2">বার্সেলোনার দাপুটে জয়</h3>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="w-full block">
+            <div>
+              <div
+                class="bg-slate-300 drop-shadow-xl mb-3 rounded-md overflow-hidden"
+              >
+                <img
+                  class="w-full rounded-sm"
+                  src="./assets/image-14..jpg"
+                  alt="image-14"
+                />
+                <h1 class="text-xl font-semibold px-4 py-2">
+                  নারী টি-টোয়েন্টি বিশ্বকাপের পর্দা উঠছে কাল
+                </h1>
+              </div>
+              <div class="flex gap-3">
+                <div class="bg-slate-300 rounded-sm overflow-hidden">
+                  <img
+                    class="rounded-sm"
+                    src="./assets/image15.jpg"
+                    alt="image-15"
+                  />
+                  <h3 class="px-3 py-2">বার্সেলোনার দাপুটে জয়</h3>
+                </div>
+                <div class="bg-slate-300 rounded-sm overflow-hidden">
+                  <img
+                    class="rounded-sm"
+                    src="./assets/image15.jpg"
+                    alt="image-15"
+                  />
+                  <h3 class="px-3 py-2">বার্সেলোনার দাপুটে জয়</h3>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="w-full block">
+            <div>
+              <div
+                class="bg-slate-300 drop-shadow-xl mb-3 rounded-md overflow-hidden"
+              >
+                <img
+                  class="w-full rounded-sm"
+                  src="./assets/image-14..jpg"
+                  alt="image-14"
+                />
+                <h1 class="text-xl font-semibold px-4 py-2">
+                  নারী টি-টোয়েন্টি বিশ্বকাপের পর্দা উঠছে কাল
+                </h1>
+              </div>
+              <div class="flex gap-3">
+                <div class="bg-slate-300 rounded-sm overflow-hidden">
+                  <img
+                    class="rounded-sm"
+                    src="./assets/image15.jpg"
+                    alt="image-15"
+                  />
+                  <h3 class="px-3 py-2">বার্সেলোনার দাপুটে জয়</h3>
+                </div>
+                <div class="bg-slate-300 rounded-sm overflow-hidden">
+                  <img
+                    class="rounded-sm"
+                    src="./assets/image15.jpg"
+                    alt="image-15"
+                  />
+                  <h3 class="px-3 py-2">বার্সেলোনার দাপুটে জয়</h3>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="mt-10">
+      <div class="container">
+        <span
+          class="block bg-gray-100 mb-2 px-2 py-2 border-b-[1px] border-t-[3px] rounded-md border-indigo-200 text-lg font-semibold"
+          >দেশজুড়ে</span
+        >
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-5">
+          <a href="#" class="w-full block">
+            <div>
+              <div class="bg-gray-100 mb-3 rounded-md overflow-hidden">
+                <img
+                  class="w-full rounded-sm"
+                  src="./assets/image-16.jpg"
+                  alt="image-14"
+                />
+                <h1
+                  class="text-xl font-semibold px-4 py-2 hover:underline transition-all"
+                >
+                  দোহারে জীবিত ব্যক্তিকে মৃত ঘোষণার অভিযোগ, ভাঙচুর
+                </h1>
+              </div>
+              <div class="flex gap-3">
+                <div class="bg-gray-100 rounded-sm overflow-hidden">
+                  <img
+                    class="rounded-sm"
+                    src="./assets/image-27.jpg"
+                    alt="image-15"
+                  />
+                  <h3 class="px-3 py-2">ঢাকা-সিলেট মহাসড়ক অবরোধ</h3>
+                </div>
+                <div class="bg-gray-100 rounded-sm overflow-hidden">
+                  <img
+                    class="rounded-sm"
+                    src="./assets/image15.jpg"
+                    alt="image-15"
+                  />
+                  <h3 class="px-3 py-2">বার্সেলোনার দাপুটে জয়</h3>
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <a href="#" class="bg-gray-100 rounded-md overflow-hidden">
+              <img
+                class="rounded-sm w-full"
+                src="./assets/image-17.jpg"
+                alt="image-17"
+              />
+              <h3 class="mt-3 px-2">
+                সিরাজগঞ্জে চাচি শাশুড়িকে ৪ টুকরো, ঘাতক আটক সিরাজগঞ্জে চাচি
+                শাশুড়িকে ৪ টুকরো, ঘাতক আটক
+              </h3>
+            </a>
+            <a href="#" class="bg-gray-100 rounded-md overflow-hidden">
+              <img
+                class="rounded-sm w-full"
+                src="./assets/image-17.jpg"
+                alt="image-17"
+              />
+              <h3 class="mt-3 px-2">
+                সিরাজগঞ্জে চাচি শাশুড়িকে ৪ টুকরো, ঘাতক আটক সিরাজগঞ্জে চাচি
+                শাশুড়িকে ৪ টুকরো, ঘাতক আটক
+              </h3>
+            </a>
+            <a href="#" class="bg-gray-100 rounded-md overflow-hidden">
+              <img
+                class="rounded-sm w-full"
+                src="./assets/image-17.jpg"
+                alt="image-17"
+              />
+              <h3 class="mt-3 px-2">
+                সিরাজগঞ্জে চাচি শাশুড়িকে ৪ টুকরো, ঘাতক আটক সিরাজগঞ্জে চাচি
+                শাশুড়িকে ৪ টুকরো, ঘাতক আটক
+              </h3>
+            </a>
+            <a href="#" class="bg-gray-100 rounded-md overflow-hidden">
+              <img
+                class="rounded-sm w-full"
+                src="./assets/image-17.jpg"
+                alt="image-17"
+              />
+              <h3 class="mt-3 px-2">
+                সিরাজগঞ্জে চাচি শাশুড়িকে ৪ টুকরো, ঘাতক আটক সিরাজগঞ্জে চাচি
+                শাশুড়িকে ৪ টুকরো, ঘাতক আটক
+              </h3>
+            </a>
+          </div>
+          <div class="w-full">
+            <a href="#">
+              <img class="w-full" src="./assets/image-21.gif" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mt-10">
+      <div class="container">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-5">
+          <a href="#" class="block w-full">
+            <span
+              class="block bg-gray-100 mb-2 px-2 py-2 border-b-[1px] border-t-[3px] rounded-md border-green-600 text-lg font-semibold"
+              >বিশেষ সংবাদ</span
+            >
+            <div class="relative rounded-md overflow-hidden mb-4">
+              <img
+                class="w-full rounded-md"
+                src="./assets/image-10.jpg"
+                alt="image-10"
+              />
+              <h3
+                class="absolute rounded-sm px-3 leading-tight py-1 left-0 bottom-0 text-lg text-white bg-slate-800 opacity-95 hover:underline transition-all"
+              >
+                হাসিনাসহ ৩০ জনের বিরুদ্ধে ট্রাইব্যুনালে নাগরিক কমিটির অভিযোগ
+              </h3>
+            </div>
+            <div>
+              <div
+                class="flex justify-between items-center gap-2 border-b-[1px] border-dashed border-gray-700 pb-2 mb-2"
+              >
+                <img
+                  class="max-w-[40%] rounded-md"
+                  src="./assets/image-11.jpg"
+                  alt="image-11"
+                />
+                <h3
+                  class="max-w-[60%] text-xl font-medium leading-relaxed hover:text-red-500 hover:underline transition-colors"
+                >
+                  স্ত্রীসহ সাবেক এমপি দুর্জয়ের দেশত্যাগে নিষেধাজ্ঞা
+                </h3>
+              </div>
+              <div
+                class="flex justify-between items-center gap-2 border-b-[1px] border-dashed border-gray-700 pb-2"
+              >
+                <img
+                  class="max-w-[40%] rounded-md"
+                  src="./assets/image-11.jpg"
+                  alt="image-11"
+                />
+                <h3
+                  class="max-w-[60%] text-xl font-medium leading-relaxed hover:text-red-500 hover:underline transition-colors"
+                >
+                  স্ত্রীসহ সাবেক এমপি দুর্জয়ের দেশত্যাগে নিষেধাজ্ঞা
+                </h3>
+              </div>
+              <div class="flex justify-between items-center gap-2 mb-2 mt-2">
+                <img
+                  class="max-w-[40%] rounded-md"
+                  src="./assets/image-11.jpg"
+                  alt="image-11"
+                />
+                <h3
+                  class="max-w-[60%] text-xl font-medium leading-relaxed hover:text-red-500 hover:underline transition-colors"
+                >
+                  স্ত্রীসহ সাবেক এমপি দুর্জয়ের দেশত্যাগে নিষেধাজ্ঞা
+                </h3>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="block w-full">
+            <span
+              class="block bg-gray-100 border-b-[1px] mb-2 px-2 py-2 border-t-[3px] rounded-md border-blue-800 text-lg font-semibold"
+              >রাজনীতি</span
+            >
+            <div class="relative rounded-md overflow-hidden mb-4">
+              <img
+                class="w-full rounded-md"
+                src="./assets/image-12.jpg"
+                alt="image-10"
+              />
+              <h3
+                class="absolute w-full rounded-sm px-3 leading-tight py-1 left-0 bottom-0 text-lg text-white bg-slate-800 opacity-95 hover:underline transition-all"
+              >
+                নাইজেরিয়ায় নৌকা ডুবে ১৬ জনের প্রাণহানি
+              </h3>
+            </div>
+            <div>
+              <div
+                class="flex justify-between items-center gap-2 border-b-[1px] border-dashed border-gray-700 pb-2 mb-2"
+              >
+                <img
+                  class="max-w-[40%] rounded-md"
+                  src="./assets/image-13.jpg"
+                  alt="image-11"
+                />
+                <h3
+                  class="max-w-[60%] text-xl font-medium leading-relaxed hover:text-red-500 hover:underline transition-colors"
+                >
+                  লেবাননে ইসরায়েলের ভয়াবহ হামলা, নিহত আরও ৪৬
+                </h3>
+              </div>
+              <div
+                class="flex justify-between items-center gap-2 border-b-[1px] border-dashed border-gray-700 pb-2"
+              >
+                <img
+                  class="max-w-[40%] rounded-md"
+                  src="./assets/image-11.jpg"
+                  alt="image-11"
+                />
+                <h3
+                  class="max-w-[60%] text-xl font-medium leading-relaxed hover:text-red-500 hover:underline transition-colors"
+                >
+                  স্ত্রীসহ সাবেক এমপি দুর্জয়ের দেশত্যাগে নিষেধাজ্ঞা
+                </h3>
+              </div>
+              <div class="flex justify-between items-center gap-2 mb-2 mt-2">
+                <img
+                  class="max-w-[40%] rounded-md"
+                  src="./assets/image-11.jpg"
+                  alt="image-11"
+                />
+                <h3
+                  class="max-w-[60%] text-xl font-medium leading-relaxed hover:text-red-500 hover:underline transition-colors"
+                >
+                  স্ত্রীসহ সাবেক এমপি দুর্জয়ের দেশত্যাগে নিষেধাজ্ঞা
+                </h3>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="block w-full">
+            <span
+              class="block bg-gray-100 mb-2 px-2 py-2 border-t-[3px] border-b-[1px] rounded-md border-red-500 text-lg font-semibold"
+              >রাজধানী</span
+            >
+            <div class="relative rounded-md overflow-hidden mb-4">
+              <img
+                class="w-full rounded-md"
+                src="./assets/image-12.jpg"
+                alt="image-10"
+              />
+              <h3
+                class="absolute w-full rounded-sm px-3 leading-tight py-1 left-0 bottom-0 text-lg text-white bg-slate-800 opacity-95 hover:underline transition-all"
+              >
+                নাইজেরিয়ায় নৌকা ডুবে ১৬ জনের প্রাণহানি
+              </h3>
+            </div>
+            <div>
+              <div
+                class="flex justify-between items-center gap-2 border-b-[1px] border-dashed border-gray-700 pb-2 mb-2"
+              >
+                <img
+                  class="max-w-[40%] rounded-md"
+                  src="./assets/image-13.jpg"
+                  alt="image-11"
+                />
+                <h3
+                  class="max-w-[60%] text-xl font-medium leading-relaxed hover:text-red-500 hover:underline transition-colors"
+                >
+                  লেবাননে ইসরায়েলের ভয়াবহ হামলা, নিহত আরও ৪৬
+                </h3>
+              </div>
+              <div
+                class="flex justify-between items-center gap-2 border-b-[1px] border-dashed border-gray-700 pb-2"
+              >
+                <img
+                  class="max-w-[40%] rounded-md"
+                  src="./assets/image-11.jpg"
+                  alt="image-11"
+                />
+                <h3
+                  class="max-w-[60%] text-xl font-medium leading-relaxed hover:text-red-500 hover:underline transition-colors"
+                >
+                  স্ত্রীসহ সাবেক এমপি দুর্জয়ের দেশত্যাগে নিষেধাজ্ঞা
+                </h3>
+              </div>
+              <div class="flex justify-between items-center gap-2 mb-2 mt-2">
+                <img
+                  class="max-w-[40%] rounded-md"
+                  src="./assets/image-11.jpg"
+                  alt="image-11"
+                />
+                <h3
+                  class="max-w-[60%] text-xl font-medium leading-relaxed hover:text-red-500 hover:underline transition-colors"
+                >
+                  স্ত্রীসহ সাবেক এমপি দুর্জয়ের দেশত্যাগে নিষেধাজ্ঞা
+                </h3>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="mt-10">
+      <div class="container">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-5">
+          <a href="#" class="block w-full">
+            <span
+              class="block bg-gray-100 mb-2 px-2 py-2 border-b-[1px] border-t-[3px] rounded-md border-green-600 text-lg font-semibold"
+              >বিজ্ঞান ও প্রযুক্তি</span
+            >
+            <div class="overflow-hidden mb-4">
+              <img
+                class="w-full rounded-md"
+                src="./assets/image-25jpg.jpg"
+                alt="image-10"
+              />
+              <h3
+                class="rounded-sm leading-tight py-2 text-xl border-b-[1px] border-green-600 border-dashed hover:underline transition-all"
+              >
+                হাসিনাসহ ৩০ জনের বিরুদ্ধে ট্রাইব্যুনালে নাগরিক কমিটির অভিযোগ
+              </h3>
+            </div>
+            <div>
+              <div
+                class="flex items-center gap-2 border-b-[1px] border-dashed border-gray-700 pb-2 mb-2"
+              >
+                <i class="fa-regular fa-copy text-xl text-indigo-700"></i>
+                <h3
+                  class="text-base font-medium leading-relaxed hover:text-red-500 hover:underline transition-colors"
+                >
+                  স্ত্রীসহ সাবেক এমপি দুর্জয়ের দেশত্যাগে নিষেধাজ্ঞা
+                </h3>
+              </div>
+              <div
+                class="flex items-center gap-2 border-b-[1px] border-dashed border-gray-700 pb-2 mb-2"
+              >
+                <i class="fa-regular fa-copy text-xl text-indigo-700"></i>
+                <h3
+                  class="text-base font-medium leading-relaxed hover:text-red-500 hover:underline transition-colors"
+                >
+                  স্ত্রীসহ সাবেক এমপি দুর্জয়ের দেশত্যাগে নিষেধাজ্ঞা
+                </h3>
+              </div>
+              <div
+                class="flex items-center gap-2 border-b-[1px] border-dashed border-gray-700 pb-2 mb-2"
+              >
+                <i class="fa-regular fa-copy text-xl text-indigo-700"></i>
+                <h3
+                  class="text-base font-medium leading-relaxed hover:text-red-500 hover:underline transition-colors"
+                >
+                  স্ত্রীসহ সাবেক এমপি দুর্জয়ের দেশত্যাগে নিষেধাজ্ঞা
+                </h3>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="block w-full">
+            <span
+              class="block bg-gray-100 mb-2 px-2 py-2 border-b-[1px] border-t-[3px] rounded-md border-green-600 text-lg font-semibold"
+              >ধর্ম-জীবন</span
+            >
+            <div class="overflow-hidden mb-4">
+              <img
+                class="w-full rounded-md"
+                src="./assets/image-25jpg.jpg"
+                alt="image-10"
+              />
+              <h3
+                class="rounded-sm leading-tight py-2 text-xl border-b-[1px] border-green-600 border-dashed hover:underline transition-all"
+              >
+                হাসিনাসহ ৩০ জনের বিরুদ্ধে ট্রাইব্যুনালে নাগরিক কমিটির অভিযোগ
+              </h3>
+            </div>
+            <div>
+              <div
+                class="flex items-center gap-2 border-b-[1px] border-dashed border-gray-700 pb-2 mb-2"
+              >
+                <i class="fa-regular fa-copy text-xl text-indigo-700"></i>
+                <h3
+                  class="text-base font-medium leading-relaxed hover:text-red-500 hover:underline transition-colors"
+                >
+                  স্ত্রীসহ সাবেক এমপি দুর্জয়ের দেশত্যাগে নিষেধাজ্ঞা
+                </h3>
+              </div>
+              <div
+                class="flex items-center gap-2 border-b-[1px] border-dashed border-gray-700 pb-2 mb-2"
+              >
+                <i class="fa-regular fa-copy text-xl text-indigo-700"></i>
+                <h3
+                  class="text-base font-medium leading-relaxed hover:text-red-500 hover:underline transition-colors"
+                >
+                  স্ত্রীসহ সাবেক এমপি দুর্জয়ের দেশত্যাগে নিষেধাজ্ঞা
+                </h3>
+              </div>
+              <div
+                class="flex items-center gap-2 border-b-[1px] border-dashed border-gray-700 pb-2 mb-2"
+              >
+                <i class="fa-regular fa-copy text-xl text-indigo-700"></i>
+                <h3
+                  class="text-base font-medium leading-relaxed hover:text-red-500 hover:underline transition-colors"
+                >
+                  স্ত্রীসহ সাবেক এমপি দুর্জয়ের দেশত্যাগে নিষেধাজ্ঞা
+                </h3>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="block w-full">
+            <span
+              class="block bg-gray-100 mb-2 px-2 py-2 border-b-[1px] border-t-[3px] rounded-md border-green-600 text-lg font-semibold"
+              >মানব সম্পদ</span
+            >
+            <div class="overflow-hidden mb-4">
+              <img
+                class="w-full rounded-md"
+                src="./assets/image-25jpg.jpg"
+                alt="image-10"
+              />
+              <h3
+                class="rounded-sm leading-tight py-2 text-xl border-b-[1px] border-green-600 border-dashed hover:underline transition-all"
+              >
+                হাসিনাসহ ৩০ জনের বিরুদ্ধে ট্রাইব্যুনালে নাগরিক কমিটির অভিযোগ
+              </h3>
+            </div>
+            <div>
+              <div
+                class="flex items-center gap-2 border-b-[1px] border-dashed border-gray-700 pb-2 mb-2"
+              >
+                <i class="fa-regular fa-copy text-xl text-indigo-700"></i>
+                <h3
+                  class="text-base font-medium leading-relaxed hover:text-red-500 hover:underline transition-colors"
+                >
+                  স্ত্রীসহ সাবেক এমপি দুর্জয়ের দেশত্যাগে নিষেধাজ্ঞা
+                </h3>
+              </div>
+              <div
+                class="flex items-center gap-2 border-b-[1px] border-dashed border-gray-700 pb-2 mb-2"
+              >
+                <i class="fa-regular fa-copy text-xl text-indigo-700"></i>
+                <h3
+                  class="text-base font-medium leading-relaxed hover:text-red-500 hover:underline transition-colors"
+                >
+                  স্ত্রীসহ সাবেক এমপি দুর্জয়ের দেশত্যাগে নিষেধাজ্ঞা
+                </h3>
+              </div>
+              <div
+                class="flex items-center gap-2 border-b-[1px] border-dashed border-gray-700 pb-2 mb-2"
+              >
+                <i class="fa-regular fa-copy text-xl text-indigo-700"></i>
+                <h3
+                  class="text-base font-medium leading-relaxed hover:text-red-500 hover:underline transition-colors"
+                >
+                  স্ত্রীসহ সাবেক এমপি দুর্জয়ের দেশত্যাগে নিষেধাজ্ঞা
+                </h3>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="mt-10">
+      <div class="container">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-5">
+          <a href="#" class="block w-full">
+            <span
+              class="block bg-gray-100 mb-2 px-2 py-2 border-b-[1px] border-t-[3px] rounded-md border-green-600 text-lg font-semibold"
+              >উদ্যোক্তার কথা</span
+            >
+            <div class="relative rounded-md overflow-hidden mb-4">
+              <img
+                class="w-full rounded-md"
+                src="./assets/image-10.jpg"
+                alt="image-10"
+              />
+              <h3
+                class="absolute rounded-sm px-3 leading-tight py-1 left-0 bottom-0 text-lg text-white bg-slate-800 opacity-95 hover:underline transition-all"
+              >
+                হাসিনাসহ ৩০ জনের বিরুদ্ধে ট্রাইব্যুনালে নাগরিক কমিটির অভিযোগ
+              </h3>
+            </div>
+            <div>
+              <div
+                class="flex justify-between items-center gap-2 border-b-[1px] border-dashed border-gray-700 pb-2 mb-2"
+              >
+                <img
+                  class="max-w-[40%] rounded-md"
+                  src="./assets/image-11.jpg"
+                  alt="image-11"
+                />
+                <h3
+                  class="max-w-[60%] text-xl font-medium leading-relaxed hover:text-red-500 hover:underline transition-colors"
+                >
+                  স্ত্রীসহ সাবেক এমপি দুর্জয়ের দেশত্যাগে নিষেধাজ্ঞা
+                </h3>
+              </div>
+              <div
+                class="flex justify-between items-center gap-2 border-b-[1px] border-dashed border-gray-700 pb-2"
+              >
+                <img
+                  class="max-w-[40%] rounded-md"
+                  src="./assets/image-11.jpg"
+                  alt="image-11"
+                />
+                <h3
+                  class="max-w-[60%] text-xl font-medium leading-relaxed hover:text-red-500 hover:underline transition-colors"
+                >
+                  স্ত্রীসহ সাবেক এমপি দুর্জয়ের দেশত্যাগে নিষেধাজ্ঞা
+                </h3>
+              </div>
+              <div class="flex justify-between items-center gap-2 mb-2 mt-2">
+                <img
+                  class="max-w-[40%] rounded-md"
+                  src="./assets/image-11.jpg"
+                  alt="image-11"
+                />
+                <h3
+                  class="max-w-[60%] text-xl font-medium leading-relaxed hover:text-red-500 hover:underline transition-colors"
+                >
+                  স্ত্রীসহ সাবেক এমপি দুর্জয়ের দেশত্যাগে নিষেধাজ্ঞা
+                </h3>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="block w-full">
+            <span
+              class="block bg-gray-100 border-b-[1px] mb-2 px-2 py-2 border-t-[3px] rounded-md border-blue-800 text-lg font-semibold"
+              >সোশ্যাল মিডিয়া</span
+            >
+            <div class="relative rounded-md overflow-hidden mb-4">
+              <img
+                class="w-full rounded-md"
+                src="./assets/image-12.jpg"
+                alt="image-10"
+              />
+              <h3
+                class="absolute w-full rounded-sm px-3 leading-tight py-1 left-0 bottom-0 text-lg text-white bg-slate-800 opacity-95 hover:underline transition-all"
+              >
+                নাইজেরিয়ায় নৌকা ডুবে ১৬ জনের প্রাণহানি
+              </h3>
+            </div>
+            <div>
+              <div
+                class="flex justify-between items-center gap-2 border-b-[1px] border-dashed border-gray-700 pb-2 mb-2"
+              >
+                <img
+                  class="max-w-[40%] rounded-md"
+                  src="./assets/image-13.jpg"
+                  alt="image-11"
+                />
+                <h3
+                  class="max-w-[60%] text-xl font-medium leading-relaxed hover:text-red-500 hover:underline transition-colors"
+                >
+                  লেবাননে ইসরায়েলের ভয়াবহ হামলা, নিহত আরও ৪৬
+                </h3>
+              </div>
+              <div
+                class="flex justify-between items-center gap-2 border-b-[1px] border-dashed border-gray-700 pb-2"
+              >
+                <img
+                  class="max-w-[40%] rounded-md"
+                  src="./assets/image-11.jpg"
+                  alt="image-11"
+                />
+                <h3
+                  class="max-w-[60%] text-xl font-medium leading-relaxed hover:text-red-500 hover:underline transition-colors"
+                >
+                  স্ত্রীসহ সাবেক এমপি দুর্জয়ের দেশত্যাগে নিষেধাজ্ঞা
+                </h3>
+              </div>
+              <div class="flex justify-between items-center gap-2 mb-2 mt-2">
+                <img
+                  class="max-w-[40%] rounded-md"
+                  src="./assets/image-11.jpg"
+                  alt="image-11"
+                />
+                <h3
+                  class="max-w-[60%] text-xl font-medium leading-relaxed hover:text-red-500 hover:underline transition-colors"
+                >
+                  স্ত্রীসহ সাবেক এমপি দুর্জয়ের দেশত্যাগে নিষেধাজ্ঞা
+                </h3>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="block w-full">
+            <span
+              class="block bg-gray-100 mb-2 px-2 py-2 border-t-[3px] border-b-[1px] rounded-md border-red-500 text-lg font-semibold"
+              >স্বাস্থ্য</span
+            >
+            <div class="relative rounded-md overflow-hidden mb-4">
+              <img
+                class="w-full rounded-md"
+                src="./assets/image-12.jpg"
+                alt="image-10"
+              />
+              <h3
+                class="absolute w-full rounded-sm px-3 leading-tight py-1 left-0 bottom-0 text-lg text-white bg-slate-800 opacity-95 hover:underline transition-all"
+              >
+                নাইজেরিয়ায় নৌকা ডুবে ১৬ জনের প্রাণহানি
+              </h3>
+            </div>
+            <div>
+              <div
+                class="flex justify-between items-center gap-2 border-b-[1px] border-dashed border-gray-700 pb-2 mb-2"
+              >
+                <img
+                  class="max-w-[40%] rounded-md"
+                  src="./assets/image-13.jpg"
+                  alt="image-11"
+                />
+                <h3
+                  class="max-w-[60%] text-xl font-medium leading-relaxed hover:text-red-500 hover:underline transition-colors"
+                >
+                  লেবাননে ইসরায়েলের ভয়াবহ হামলা, নিহত আরও ৪৬
+                </h3>
+              </div>
+              <div
+                class="flex justify-between items-center gap-2 border-b-[1px] border-dashed border-gray-700 pb-2"
+              >
+                <img
+                  class="max-w-[40%] rounded-md"
+                  src="./assets/image-11.jpg"
+                  alt="image-11"
+                />
+                <h3
+                  class="max-w-[60%] text-xl font-medium leading-relaxed hover:text-red-500 hover:underline transition-colors"
+                >
+                  স্ত্রীসহ সাবেক এমপি দুর্জয়ের দেশত্যাগে নিষেধাজ্ঞা
+                </h3>
+              </div>
+              <div class="flex justify-between items-center gap-2 mb-2 mt-2">
+                <img
+                  class="max-w-[40%] rounded-md"
+                  src="./assets/image-11.jpg"
+                  alt="image-11"
+                />
+                <h3
+                  class="max-w-[60%] text-xl font-medium leading-relaxed hover:text-red-500 hover:underline transition-colors"
+                >
+                  স্ত্রীসহ সাবেক এমপি দুর্জয়ের দেশত্যাগে নিষেধাজ্ঞা
+                </h3>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="mt-10">
+      <div class="container">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-5">
+          <a href="#" class="block w-full">
+            <span
+              class="block bg-gray-100 mb-2 px-2 py-2 border-b-[1px] border-t-[3px] rounded-md border-green-600 text-lg font-semibold"
+              >ভ্রমণ</span
+            >
+            <div class="overflow-hidden mb-4">
+              <img
+                class="w-full rounded-md"
+                src="./assets/image-25jpg.jpg"
+                alt="image-10"
+              />
+              <h3
+                class="rounded-sm leading-tight py-2 text-xl border-b-[1px] border-green-600 border-dashed hover:underline transition-all"
+              >
+                হাসিনাসহ ৩০ জনের বিরুদ্ধে ট্রাইব্যুনালে নাগরিক কমিটির অভিযোগ
+              </h3>
+            </div>
+            <div>
+              <div
+                class="flex items-center gap-2 border-b-[1px] border-dashed border-gray-700 pb-2 mb-2"
+              >
+                <i class="fa-regular fa-copy text-xl text-indigo-700"></i>
+                <h3
+                  class="text-base font-medium leading-relaxed hover:text-red-500 hover:underline transition-colors"
+                >
+                  স্ত্রীসহ সাবেক এমপি দুর্জয়ের দেশত্যাগে নিষেধাজ্ঞা
+                </h3>
+              </div>
+              <div
+                class="flex items-center gap-2 border-b-[1px] border-dashed border-gray-700 pb-2 mb-2"
+              >
+                <i class="fa-regular fa-copy text-xl text-indigo-700"></i>
+                <h3
+                  class="text-base font-medium leading-relaxed hover:text-red-500 hover:underline transition-colors"
+                >
+                  স্ত্রীসহ সাবেক এমপি দুর্জয়ের দেশত্যাগে নিষেধাজ্ঞা
+                </h3>
+              </div>
+              <div
+                class="flex items-center gap-2 border-b-[1px] border-dashed border-gray-700 pb-2 mb-2"
+              >
+                <i class="fa-regular fa-copy text-xl text-indigo-700"></i>
+                <h3
+                  class="text-base font-medium leading-relaxed hover:text-red-500 hover:underline transition-colors"
+                >
+                  স্ত্রীসহ সাবেক এমপি দুর্জয়ের দেশত্যাগে নিষেধাজ্ঞা
+                </h3>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="block w-full">
+            <span
+              class="block bg-gray-100 mb-2 px-2 py-2 border-b-[1px] border-t-[3px] rounded-md border-green-600 text-lg font-semibold"
+              >বিচিত্র</span
+            >
+            <div class="overflow-hidden mb-4">
+              <img
+                class="w-full rounded-md"
+                src="./assets/image-25jpg.jpg"
+                alt="image-10"
+              />
+              <h3
+                class="rounded-sm leading-tight py-2 text-xl border-b-[1px] border-green-600 border-dashed hover:underline transition-all"
+              >
+                হাসিনাসহ ৩০ জনের বিরুদ্ধে ট্রাইব্যুনালে নাগরিক কমিটির অভিযোগ
+              </h3>
+            </div>
+            <div>
+              <div
+                class="flex items-center gap-2 border-b-[1px] border-dashed border-gray-700 pb-2 mb-2"
+              >
+                <i class="fa-regular fa-copy text-xl text-indigo-700"></i>
+                <h3
+                  class="text-base font-medium leading-relaxed hover:text-red-500 hover:underline transition-colors"
+                >
+                  স্ত্রীসহ সাবেক এমপি দুর্জয়ের দেশত্যাগে নিষেধাজ্ঞা
+                </h3>
+              </div>
+              <div
+                class="flex items-center gap-2 border-b-[1px] border-dashed border-gray-700 pb-2 mb-2"
+              >
+                <i class="fa-regular fa-copy text-xl text-indigo-700"></i>
+                <h3
+                  class="text-base font-medium leading-relaxed hover:text-red-500 hover:underline transition-colors"
+                >
+                  স্ত্রীসহ সাবেক এমপি দুর্জয়ের দেশত্যাগে নিষেধাজ্ঞা
+                </h3>
+              </div>
+              <div
+                class="flex items-center gap-2 border-b-[1px] border-dashed border-gray-700 pb-2 mb-2"
+              >
+                <i class="fa-regular fa-copy text-xl text-indigo-700"></i>
+                <h3
+                  class="text-base font-medium leading-relaxed hover:text-red-500 hover:underline transition-colors"
+                >
+                  স্ত্রীসহ সাবেক এমপি দুর্জয়ের দেশত্যাগে নিষেধাজ্ঞা
+                </h3>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="block w-full">
+            <span
+              class="block bg-gray-100 mb-2 px-2 py-2 border-b-[1px] border-t-[3px] rounded-md border-green-600 text-lg font-semibold"
+              >শিল্প ও সংস্কৃতি</span
+            >
+            <div class="overflow-hidden mb-4">
+              <img
+                class="w-full rounded-md"
+                src="./assets/image-25jpg.jpg"
+                alt="image-10"
+              />
+              <h3
+                class="rounded-sm leading-tight py-2 text-xl border-b-[1px] border-green-600 border-dashed hover:underline transition-all"
+              >
+                হাসিনাসহ ৩০ জনের বিরুদ্ধে ট্রাইব্যুনালে নাগরিক কমিটির অভিযোগ
+              </h3>
+            </div>
+            <div>
+              <div
+                class="flex items-center gap-2 border-b-[1px] border-dashed border-gray-700 pb-2 mb-2"
+              >
+                <i class="fa-regular fa-copy text-xl text-indigo-700"></i>
+                <h3
+                  class="text-base font-medium leading-relaxed hover:text-red-500 hover:underline transition-colors"
+                >
+                  স্ত্রীসহ সাবেক এমপি দুর্জয়ের দেশত্যাগে নিষেধাজ্ঞা
+                </h3>
+              </div>
+              <div
+                class="flex items-center gap-2 border-b-[1px] border-dashed border-gray-700 pb-2 mb-2"
+              >
+                <i class="fa-regular fa-copy text-xl text-indigo-700"></i>
+                <h3
+                  class="text-base font-medium leading-relaxed hover:text-red-500 hover:underline transition-colors"
+                >
+                  স্ত্রীসহ সাবেক এমপি দুর্জয়ের দেশত্যাগে নিষেধাজ্ঞা
+                </h3>
+              </div>
+              <div
+                class="flex items-center gap-2 border-b-[1px] border-dashed border-gray-700 pb-2 mb-2"
+              >
+                <i class="fa-regular fa-copy text-xl text-indigo-700"></i>
+                <h3
+                  class="text-base font-medium leading-relaxed hover:text-red-500 hover:underline transition-colors"
+                >
+                  স্ত্রীসহ সাবেক এমপি দুর্জয়ের দেশত্যাগে নিষেধাজ্ঞা
+                </h3>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <span
+          class="block bg-gray-100 mb-2 px-2 py-2 border-b-[1px] border-t-[3px] rounded-md border-indigo-500 text-lg font-semibold"
+          >লাইফস্টাইল</span
+        >
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-7">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+            <a
+              href="#"
+              class="bg-gray-300 rounded-md overflow-hidden block w-full mb-3"
+            >
+              <img
+                class="w-full mb-3"
+                src="./assets/Rainy-Day.jpg"
+                alt="image"
+              />
+              <h3 class="text-base pl-3 pb-3">বৃষ্টির দিনে কী খাবেন?</h3>
+            </a>
+            <a
+              href="#"
+              class="bg-gray-300 rounded-md overflow-hidden block w-full mb-3"
+            >
+              <img
+                class="w-full mb-3"
+                src="./assets/Rainy-Day.jpg"
+                alt="image"
+              />
+              <h3 class="text-base pl-3 pb-3">বৃষ্টির দিনে কী খাবেন?</h3>
+            </a>
+            <a
+              href="#"
+              class="bg-gray-300 rounded-md overflow-hidden block w-full mb-3"
+            >
+              <img
+                class="w-full mb-3"
+                src="./assets/Rainy-Day.jpg"
+                alt="image"
+              />
+              <h3 class="text-base pl-3 pb-3">বৃষ্টির দিনে কী খাবেন?</h3>
+            </a>
+            <a
+              href="#"
+              class="bg-gray-300 rounded-md overflow-hidden block w-full mb-3"
+            >
+              <img
+                class="w-full mb-3"
+                src="./assets/Rainy-Day.jpg"
+                alt="image"
+              />
+              <h3 class="text-base pl-3 pb-3">বৃষ্টির দিনে কী খাবেন?</h3>
+            </a>
+          </div>
+          <div>
+            <div
+              class="flex justify-between items-center gap-4 border-b-[1px] border-gray-600 border-dashed pb-3 mb-3"
+            >
+              <img
+                class="w-[90px] h-[90px] rounded-full"
+                src="./assets/eye-2.jpg"
+                alt="image"
+              />
+              <h3 class="text-xl">চোখের পাতা কাঁপে কেন? বিজ্ঞান কি বলে?</h3>
+            </div>
+            <div
+              class="flex justify-between items-center gap-4 border-b-[1px] border-gray-600 border-dashed pb-3 mb-3"
+            >
+              <img
+                class="w-[90px] h-[90px] rounded-full"
+                src="./assets/eye-2.jpg"
+                alt="image"
+              />
+              <h3 class="text-xl">চোখের পাতা কাঁপে কেন? বিজ্ঞান কি বলে?</h3>
+            </div>
+            <div
+              class="flex justify-between items-center gap-4 border-b-[1px] border-gray-600 border-dashed pb-3 mb-3"
+            >
+              <img
+                class="w-[90px] h-[90px] rounded-full"
+                src="./assets/eye-2.jpg"
+                alt="image"
+              />
+              <h3 class="text-xl">চোখের পাতা কাঁপে কেন? বিজ্ঞান কি বলে?</h3>
+            </div>
+          </div>
+          <div><img src="./assets/bashundhara311223.jpg" alt="image" /></div>
+        </div>
+      </div>
+    </section>
+    <!-- ========Main section end========== -->
+    <!-- ========footer section start========== -->
+    <footer class="bg-indigo-500">
+      <div class="container">
+        <div
+          class="flex items-center flex-col md:flex-row md:flex-wrap justify-between text-white"
+        >
+          <a href="/src/index.html"
+            ><img
+              class="h-[40px] mb-4 md:mb-0"
+              src="./assets/logo.svg"
+              alt="logo"
+          /></a>
+          <span class="hidden md:block w-[1px] h-[40px] bg-white"></span>
+          <div class="mb-4 md:mb-0">
+            <span>টেলিফোন: 0123456789 </span> <br /><span
+              >ইমেল: xyz@gmail.com
+            </span>
+          </div>
+          <span class="hidden md:block w-[1px] h-[40px] bg-white"></span>
+          <div>
+            <span class="text-center block"
+              >জাহাঙ্গীর টাওয়ার, (৭ম তলা), ১০, কারওয়ান বাজার, ঢাকা-১২১৫</span
+            >
+            <div class="flex gap-5 justify-center text-2xl mt-3">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ========footer section end========== -->
+  </body>
+</html>
