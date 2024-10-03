@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>মুসলিম ছেলে এবং মেয়েদের নামের ডাটাবেস - বাংলা হাদিস</title>
+    <!-- ====== Font awesome ===== -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ====== Tailwind css ===== -->
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body>
+    <!-- ======= header ======= -->
+    <header class="relative bg-indigo-500 text-white">
+      <div class="flex items-center justify-between container">
+        <div class="md:w-[35%]">
+          <div class="flex items-center md:gap-3 md:mb-4">
+            <i
+              class="fa-solid fa-bars text-2xl md:hidden cursor-pointer"
+              id="showMenu"
+            ></i>
+            <div class="">
+              <i
+                class="fa-solid fa-magnifying-glass hidden md:block text-white text-2xl cursor-pointer"
+              ></i>
+            </div>
+          </div>
+          <p class="hidden md:flex items-center gap-1">
+            <i class="fa-solid fa-calendar-days"></i
+            ><span class="text-sm font-medium"
+              >বৃহস্পতিবার, ০৩ অক্টোবর ২০২৪, ১৭ আশ্বিন ১৪৩১</span
+            >
+          </p>
+        </div>
+        <div class="md:w-[30%]">
+          <a href="./index.html">
+            <img
+              class="h-8 md:h-11 lg:h-14 m-auto"
+              src="./assets/EkusheyTVLogo.png"
+              alt="logo"
+          /></a>
+        </div>
+        <div class="md:w-[30%] md:block">
+          <div
+            class="hidden md:flex justify-end gap-4 text-2xl text-black opacity-90"
+          >
+            <a href="https://facebook.com" target="_blank"
+              ><i class="fa-brands fa-facebook-f text-white"></i
+            ></a>
+            <a href="https://twitter.com" target="_blank"
+              ><i class="fa-brands fa-x-twitter text-white"></i
+            ></a>
+            <a href="https://youtube.com" target="_blank"
+              ><i class="fa-brands fa-youtube text-white"></i
+            ></a>
+            <a href="https://instagram.com" target="_blank"
+              ><i class="fa-brands fa-instagram text-white"></i
+            ></a>
+          </div>
+          <i
+            class="fa-solid fa-magnifying-glass text-2xl opacity-80 md:hidden"
+          ></i>
+          <ul class="hidden md:flex items-center gap-2 justify-end md:mt-3">
+            <li><a class="text-sm" href="#">বাংলা কনভার্টার</a></li>
+            <span
+              class="w-[1.5px] h-[15px] inline-block bg-white rounded-full"
+            ></span>
+            <li><a class="text-sm" href="#">ই-পেপার</a></li>
+            <span
+              class="w-[1px] h-[15px] inline-block bg-white rounded-full"
+            ></span>
+            <li><a class="text-sm" href="#">আর্কাইভ</a></li>
+            <span
+              class="w-[1px] h-[15px] inline-block bg-white rounded-full"
+            ></span>
+            <li>
+              <a class="font-semibold text-base" href="#">English</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- ========= Navbar ========= -->
+      <nav class="mt-3 bg-blue-800 hidden lg:block">
+        <ul
+          class="flex items-center gap-4 justify-between text-white container"
+        >
+          <li class="relative menu">
+            <a
+              href="#"
+              class="text-lg font-medium hover:text-black transition-colors"
+              ><span>জাতীয়</span> <i class="fa-solid fa-caret-down"></i>
+              <ul class="absolute bg-indigo-600 w-36 px-3 py-2 mt-5 submenu">
+                <li><a href="#">পদ্মা সেতু</a></li>
+              </ul>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-lg font-medium hover:text-black transition-colors"
+            >
+              রাজনীতি</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-lg font-medium hover:text-black transition-colors"
+              >রাজধানী</a
+            >
+          </li>
+          <li class="relative menu">
+            <a
+              href="#"
+              class="text-lg font-medium hover:text-black transition-colors"
+              >দেশজুড়ে <i class="fa-solid fa-caret-down"></i>
+              <ul class="absolute bg-indigo-600 w-36 px-3 py-2 mt-5 submenu">
+                <li><a href="#">বরিশাল</a></li>
+                <li><a href="#">চট্টগ্রাম</a></li>
+                <li><a href="#">ঢাকা</a></li>
+                <li><a href="#">খুলনা</a></li>
+                <li><a href="#">রাজশাহী</a></li>
+                <li><a href="#">সিলেট</a></li>
+                <li><a href="#">রংপুর</a></li>
+                <li><a href="#">ময়মনসিংহ</a></li>
+              </ul>
+            </a>
+          </li>
+          <li class="relative menu">
+            <a
+              href="#"
+              class="text-lg font-medium hover:text-black transition-colors"
+              >আন্তর্জাতিক <i class="fa-solid fa-caret-down"></i>
+              <ul class="absolute bg-indigo-600 w-36 px-3 py-2 mt-5 submenu">
+                <li><a href="#">এশিয়া</a></li>
+                <li><a href="#">ইউরোপ</a></li>
+                <li><a href="#">আমেরিকা</a></li>
+                <li><a href="#">আফ্রিকা</a></li>
+                <li><a href="#">ওশেনিয়া</a></li>
+              </ul></a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-lg font-medium hover:text-black transition-colors"
+              >অর্থ-বাণিজ্য</a
+            >
+          </li>
+          <li class="relative menu">
+            <a
+              href="#"
+              class="text-lg font-medium hover:text-black transition-colors"
+              >খেলাধুলা <i class="fa-solid fa-caret-down"></i>
+              <ul class="absolute bg-indigo-600 w-36 px-3 py-2 mt-5 submenu">
+                <li><a href="#">ক্রিকেট </a></li>
+                <li><a href="#">ফুটবল </a></li>
+                <li><a href="#">টেনিস</a></li>
+                <li><a href="#">অন্যান্য</a></li>
+              </ul></a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-lg font-medium hover:text-black transition-colors"
+              >বিনোদন
+            </a>
+          </li>
+          <li>
+            <a href="#" class="text-lg font-medium">লাইফস্টাইল</a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-lg font-medium hover:text-black transition-colors"
+              >ভিডিও
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-lg font-medium hover:text-black transition-colors"
+              >আইন-আদালত</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-lg font-medium hover:text-black transition-colors"
+              >শিশুদের নামের তালিকা</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="mt-[1px] z-[-2]">
+      <div
+        class="container flex items-center border-[1px] border-indigo-500 p-0"
+      >
+        <span
+          class="bg-indigo-500 text-white inline-block px-3 py-2 text-xl font-semibold"
+          >শিরোনাম
+        </span>
+        <marquee behavior="" direction=""
+          ><div class="flex items-center gap-10">
+            <p class="flex items-center gap-2">
+              <span
+                class="block w-[10px] h-[10px] bg-indigo-600 rounded-full"
+              ></span>
+              <span
+                >ড. ইউনূসকে ৬৬৬ কোটি টাকা কর দিতে হাইকোর্টের রায়
+                প্রত্যাহার</span
+              >
+            </p>
+            <p class="flex items-center gap-2">
+              <span
+                class="block w-[10px] h-[10px] bg-indigo-600 rounded-full"
+              ></span>
+              <span> ঢাকা থেকে ৬ রুটে নৌ চলাচল বন্ধ </span>
+            </p>
+            <p class="flex items-center gap-2">
+              <span
+                class="block w-[10px] h-[10px] bg-indigo-600 rounded-full"
+              ></span>
+              <span>
+                এক মাসে হজের প্রাক-নিবন্ধন করেছেন ৫২ হাজারের বেশি মানুষ
+              </span>
+            </p>
+            <p class="flex items-center gap-2">
+              <span
+                class="block w-[10px] h-[10px] bg-indigo-600 rounded-full"
+              ></span>
+              <span> ঢাকা থেকে ৬ রুটে নৌ চলাচল বন্ধ </span>
+            </p>
+            <p class="flex items-center gap-2">
+              <span
+                class="block w-[10px] h-[10px] bg-indigo-600 rounded-full"
+              ></span>
+              <span> ঢাকা থেকে ৬ রুটে নৌ চলাচল বন্ধ </span>
+            </p>
+            <p class="flex items-center gap-2">
+              <span
+                class="block w-[10px] h-[10px] bg-indigo-600 rounded-full"
+              ></span>
+              <span> ঢাকা থেকে ৬ রুটে নৌ চলাচল বন্ধ </span>
+            </p>
+            <p class="flex items-center gap-2">
+              <span
+                class="block w-[10px] h-[10px] bg-indigo-600 rounded-full"
+              ></span>
+              <span> ঢাকা থেকে ৬ রুটে নৌ চলাচল বন্ধ </span>
+            </p>
+            <p class="flex items-center gap-2">
+              <span
+                class="block w-[10px] h-[10px] bg-indigo-600 rounded-full"
+              ></span>
+              <span> ঢাকা থেকে ৬ রুটে নৌ চলাচল বন্ধ </span>
+            </p>
+            <p class="flex items-center gap-2">
+              <span
+                class="block w-[10px] h-[10px] bg-indigo-600 rounded-full"
+              ></span>
+              <span> ঢাকা থেকে ৬ রুটে নৌ চলাচল বন্ধ </span>
+            </p>
+            <p class="flex items-center gap-2">
+              <span
+                class="block w-[10px] h-[10px] bg-indigo-600 rounded-full"
+              ></span>
+              <span> ঢাকা থেকে ৬ রুটে নৌ চলাচল বন্ধ </span>
+            </p>
+            <p class="flex items-center gap-2">
+              <span
+                class="block w-[10px] h-[10px] bg-indigo-600 rounded-full"
+              ></span>
+              <span> ঢাকা থেকে ৬ রুটে নৌ চলাচল বন্ধ </span>
+            </p>
+          </div>
+        </marquee>
+      </div>
+    </div>
+  </body>
+</html>

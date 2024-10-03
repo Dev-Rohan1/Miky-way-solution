@@ -29,4 +29,10 @@
     margin: 0 auto;
     padding: 20px 20px;
   }
+  .menu:hover .submenu {
+    display: block;
+  }
+  .submenu {
+    display: none;
+  }
 }
